@@ -1,0 +1,35 @@
+{
+	"details": [
+		{
+			"id": "1",
+			"firstName": "Nav",
+			"middleName": "Deep",
+			"lastName": "Singh",
+			"email": "nav@gmail.com",
+			"phone": "9876543210",
+			"role": "Manager",
+			"address": "Mohali"
+		},
+		{
+			"id": "2",
+			"firstName": "Dev",
+			"middleName": "Roy",
+			"lastName": "Kapoor",
+			"email": "dev@gmail.com",
+			"phone": "9764523865",
+			"role": "Developer",
+			"address": "Delhi"
+		},
+		{
+			"id": "3",
+			"firstName": "Riya",
+			"middleName": "",
+			"lastName": "Mathur",
+			"email": "riya@gmail.com",
+			"phone": "9786354567",
+			"role": "Intern",
+			"address": "Mumbai"
+		}
+		
+	]
+}
