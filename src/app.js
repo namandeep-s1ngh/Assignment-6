@@ -7,13 +7,7 @@ var refresh = require('../datarefresh.json');
 // console.log(txt.details);
 var app = express();
 app.use(cors());
-app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors({ origin: true, credentials: true }));
-//app.set('view engine', 'ejs');
-app.get('/', function (req, res) {
-    res.render('index');
-});
 app.get('/details', function (req, res) {
     res.send(JSON.stringify(refresh));
 });
@@ -34,24 +28,21 @@ app.get('/details/:id', function (req, res) {
     
 }) */
 app.patch('/details/:id', function (req, res) {
-    // console.log(req.body)
     var id = req.params.id;
     //console.log(id)
     //console.log(txt)
     for (var _i = 0, _a = txt.details; _i < _a.length; _i++) {
         var i = _a[_i];
-        // console.log(txt)
         if (i.id === id) {
-            i.firstName = req.body.firstname;
-            i.lastName = req.body.lastname;
-            i.middleName = req.body.middlename;
+            i.firstName = req.body.firstName;
+            i.lastName = req.body.lastName;
+            i.middleName = req.body.middleName;
             i.email = req.body.email;
             i.phone = req.body.phone;
             i.role = req.body.role;
             i.address = req.body.address;
         }
     }
-    // console.log(txt)
     res.send(JSON.stringify(txt));
 });
 app["delete"]('/details/:id', function (req, res) {

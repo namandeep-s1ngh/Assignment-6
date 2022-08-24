@@ -7,7 +7,7 @@
 			"lastName": "Singh",
 			"email": "nav@gmail.com",
 			"phone": "9876543210",
-			"role": "Manager",
+			"role": 0,
 			"address": "Mohali"
 		},
 		{
@@ -17,7 +17,7 @@
 			"lastName": "Kapoor",
 			"email": "dev@gmail.com",
 			"phone": "9764523865",
-			"role": "Developer",
+			"role": 1,
 			"address": "Delhi"
 		},
 		{
@@ -27,9 +27,8 @@
 			"lastName": "Mathur",
 			"email": "riya@gmail.com",
 			"phone": "9786354567",
-			"role": "Intern",
+			"role": 2,
 			"address": "Mumbai"
-		}
-		
+		}	
 	]
 }
