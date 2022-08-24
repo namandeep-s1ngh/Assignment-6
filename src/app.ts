@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.get('/details', (req, res) => {
     res.send(JSON.stringify(refresh));
-})
+});
 
 app.get('/details/:id', (req, res) => {
     // console.log(req.params.id);
@@ -27,15 +27,14 @@ app.get('/details/:id', (req, res) => {
             res.send(JSON.stringify(i));
         }
     }
-})
+});
 
 /* app.post('/details', (req, res) => {                                                             //will be used later for adding new entries.
     console.log(req.body)
     
-}) */
+}); */
 
 app.patch('/details/:id', (req, res) => {
-
     let id = req.params.id;
     //console.log(id)
     //console.log(txt)
@@ -51,13 +50,13 @@ app.patch('/details/:id', (req, res) => {
         }        
     }
     res.send(JSON.stringify(txt));
-})
+});
 
 app.delete('/details/:id', (req, res) => {
     let id = Number(req.params.id) -1;    
     txt.details[id] = [];
     res.send(JSON.stringify(txt));
-})
+});
 
 var port = process.env.PORT || 3000;
 app.listen(port);

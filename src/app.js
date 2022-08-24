@@ -26,7 +26,7 @@ app.get('/details/:id', function (req, res) {
 /* app.post('/details', (req, res) => {                                                             //will be used later for adding new entries.
     console.log(req.body)
     
-}) */
+}); */
 app.patch('/details/:id', function (req, res) {
     var id = req.params.id;
     //console.log(id)
